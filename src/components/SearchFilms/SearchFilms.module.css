@@ -1,0 +1,74 @@
+.Searchbar {
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.SearchForm {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.SearchFormButton {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #2a363b;
+  border-left: none;
+  background-color: transparent;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+}
+
+.SearchFormIcon {
+  stroke: #000000;
+}
+.SearchFormIcon:hover {
+  stroke: #f08b18;
+}
+
+.SearchFormButtonLabel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+.SearchFormInput {
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 16px;
+  border: 1px solid #2a363b;
+  border-right: none;
+  outline: none;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.SearchFormInput::placeholder {
+  font: inherit;
+  font-size: 18px;
+}
